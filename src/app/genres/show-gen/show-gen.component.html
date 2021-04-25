@@ -1,1 +1,32 @@
-<p>show-gen works!</p>
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+
+    <button type="button" class="btn btn-light btn-outline-primary " >Добавить жанр</button>
+    
+    </div>
+<app-add-edit-gen></app-add-edit-gen>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Жанры</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let genre of genres">
+            <tr>
+                <td>
+                    {{genre.name}}
+                </td>
+                <td>
+                    <button class="btn btn-link col-sm-3">Редактировать</button>
+                </td>
+                <td>
+                    <button class="btn btn-link col-sm-3">Удалить</button>
+                </td>
+            </tr>
+
+        </ng-container>
+
+    </tbody>
+</table>

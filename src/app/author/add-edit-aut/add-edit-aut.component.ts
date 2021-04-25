@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-add-edit-aut',
@@ -9,7 +9,13 @@ export class AddEditAutComponent implements OnInit {
 
   constructor() { }
 
+  @Input() author:any;
+  
+  visibleForm: boolean = false;
+
+
   ngOnInit(): void {
+    
   }
 
 }
