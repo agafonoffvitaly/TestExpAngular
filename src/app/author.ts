@@ -1,8 +1,11 @@
+import { Book } from "./book";
+
 export class Author{
     public id!: number;
     public lastName!: string;
     public firstName!: string;
     public middleName!: string;
-    public birthday!: number;
+    public birthday!: string;
+    public books!: [];
 }
 

@@ -1,1 +1,14 @@
-<p>add-edit-aut works!</p>
+<div class="container">
+    <input [(ngModel)]="firstName" type="text"  name="first" required>
+
+    <input [(ngModel)]="lastName" type="text" name="last" required>
+
+    <input [(ngModel)]="middleName" type="text"  name="middle">
+
+    <input [(ngModel)]="birthday" type="date"  name="birthd" required>
+
+    <app-show-books></app-show-books>
+    
+    <button (click)="saveAuthor()">Сохранить</button>
+    <button (click)="onCancel()">Отмена</button>
+</div>
